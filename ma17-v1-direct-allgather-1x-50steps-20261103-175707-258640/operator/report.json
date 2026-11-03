@@ -1,0 +1,276 @@
+{
+  "protocol": "h100-ma17-direct-allgather-v1-operator",
+  "run_id": "c7b8f2765979401fa48e5f0430bf5ac0",
+  "completed": true,
+  "correctness_passed": true,
+  "bitwise_equal_within_pairs": true,
+  "equivalence_pairs": [
+    [
+      "F4-cache-zcount-csoftmax-directag",
+      "F4-cache-zcount-csoftmax"
+    ]
+  ],
+  "consumer_gradients_validated": true,
+  "roles": {
+    "attn": {
+      "mean_us": {
+        "F4-cache-zcount-csoftmax": 92.02416054904461,
+        "F4-cache-zcount-csoftmax-directag": 92.125553637743
+      },
+      "comparisons": {
+        "F4-cache-zcount-csoftmax-directag/F4-cache-zcount-csoftmax": {
+          "percent": -0.10813243941731887,
+          "ci95": [
+            -0.8147528588623887,
+            0.45299256960176226
+          ],
+          "paired_blocks": 4
+        }
+      }
+    },
+    "mlp": {
+      "mean_us": {
+        "F4-cache-zcount-csoftmax": 140.2036240324378,
+        "F4-cache-zcount-csoftmax-directag": 140.28686098754406
+      },
+      "comparisons": {
+        "F4-cache-zcount-csoftmax-directag/F4-cache-zcount-csoftmax": {
+          "percent": -0.059496690957083764,
+          "ci95": [
+            -0.29257073605499784,
+            0.20056469833783508
+          ],
+          "paired_blocks": 4
+        }
+      }
+    }
+  },
+  "all_samples": [
+    {
+      "block": 0,
+      "arm": "F4-cache-zcount-csoftmax",
+      "index": 0,
+      "directory": "block00-F4-cache-zcount-csoftmax",
+      "rankmax_wall_us": {
+        "attn": 91.88606403768063,
+        "mlp": 140.28233475983143
+      }
+    },
+    {
+      "block": 0,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 1,
+      "directory": "block00-F4-cache-zcount-csoftmax-directag",
+      "rankmax_wall_us": {
+        "attn": 91.92351251840591,
+        "mlp": 140.28392732143402
+      }
+    },
+    {
+      "block": 1,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 2,
+      "directory": "block01-F4-cache-zcount-csoftmax-directag",
+      "rankmax_wall_us": {
+        "attn": 91.82906709611416,
+        "mlp": 140.05250297486782
+      }
+    },
+    {
+      "block": 1,
+      "arm": "F4-cache-zcount-csoftmax",
+      "index": 3,
+      "directory": "block01-F4-cache-zcount-csoftmax",
+      "rankmax_wall_us": {
+        "attn": 91.9275265187025,
+        "mlp": 140.54004102945328
+      }
+    },
+    {
+      "block": 2,
+      "arm": "F4-cache-zcount-csoftmax",
+      "index": 4,
+      "directory": "block02-F4-cache-zcount-csoftmax",
+      "rankmax_wall_us": {
+        "attn": 92.16882288455963,
+        "mlp": 139.6926399320364
+      }
+    },
+    {
+      "block": 2,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 5,
+      "directory": "block02-F4-cache-zcount-csoftmax-directag",
+      "rankmax_wall_us": {
+        "attn": 91.60011075437069,
+        "mlp": 140.17517678439617
+      }
+    },
+    {
+      "block": 3,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 6,
+      "directory": "block03-F4-cache-zcount-csoftmax-directag",
+      "rankmax_wall_us": {
+        "attn": 93.14952418208122,
+        "mlp": 140.63583686947823
+      }
+    },
+    {
+      "block": 3,
+      "arm": "F4-cache-zcount-csoftmax",
+      "index": 7,
+      "directory": "block03-F4-cache-zcount-csoftmax",
+      "rankmax_wall_us": {
+        "attn": 92.11422875523567,
+        "mlp": 140.2994804084301
+      }
+    }
+  ],
+  "measurement_identity": {
+    "hardware": {
+      "host": "10-118-122-131",
+      "devices": [
+        {
+          "name": "NVIDIA H100 80GB HBM3",
+          "uuid": "26e67438-f877-3123-29e0-d33d473c8141",
+          "sm_count": 132
+        },
+        {
+          "name": "NVIDIA H100 80GB HBM3",
+          "uuid": "7f7217aa-30c6-c324-7a2a-47b3da64ed90",
+          "sm_count": 132
+        },
+        {
+          "name": "NVIDIA H100 80GB HBM3",
+          "uuid": "aea7e493-405c-304c-b5c5-28cd9624699e",
+          "sm_count": 132
+        },
+        {
+          "name": "NVIDIA H100 80GB HBM3",
+          "uuid": "3e7023fb-d34e-400f-6e3e-666145b657cf",
+          "sm_count": 132
+        },
+        {
+          "name": "NVIDIA H100 80GB HBM3",
+          "uuid": "00c0a7d8-cbb2-4acb-3fa0-5a7d4e0f899d",
+          "sm_count": 132
+        },
+        {
+          "name": "NVIDIA H100 80GB HBM3",
+          "uuid": "7f399bc6-8077-f309-92c7-538dccc06f42",
+          "sm_count": 132
+        },
+        {
+          "name": "NVIDIA H100 80GB HBM3",
+          "uuid": "0d74eef5-ceef-e92e-242e-36ee582fac83",
+          "sm_count": 132
+        },
+        {
+          "name": "NVIDIA H100 80GB HBM3",
+          "uuid": "9da6bcea-1b20-252e-4819-eb5699a9b1a1",
+          "sm_count": 132
+        }
+      ]
+    },
+    "software": {
+      "torch": "2.6.0+cu124",
+      "cuda": "12.4",
+      "nccl": [
+        2,
+        21,
+        5
+      ]
+    }
+  },
+  "evidence_files": {
+    "results/block00-F4-cache-zcount-csoftmax/rank0.json": "345b973a6871b5170631c06752c190339722f0af88043cb189b4fb5d09abb6ca",
+    "results/block00-F4-cache-zcount-csoftmax/rank1.json": "7793116d1deca6cf8f02b4790a9d98430f83ee5ae6506bb812e8c060f0cfbecc",
+    "results/block00-F4-cache-zcount-csoftmax/rank2.json": "5e1b42da3d5635ba7980fd33d95b774a1cc94edcc3a2810c4e7b0578d233ab2b",
+    "results/block00-F4-cache-zcount-csoftmax/rank3.json": "ad3ed6c8d55890026185310104b139b38b517206b017f040e58b6e675beda662",
+    "results/block00-F4-cache-zcount-csoftmax/rank4.json": "f1a65d73cc716daa8727296fd1e0e0d8abd422b9040c41e1d147157e8053b9d9",
+    "results/block00-F4-cache-zcount-csoftmax/rank5.json": "4a525dc5558f65b57f342119bbfd0abe2d223a45d8cefb71e6749e7a06d8c4c4",
+    "results/block00-F4-cache-zcount-csoftmax/rank6.json": "997626326a728eea7c55863c894a1c3ea8c699d66282e0b56018cb30b2f7d121",
+    "results/block00-F4-cache-zcount-csoftmax/rank7.json": "d56e958b32e0510a0742ac75d16c2c0ae11f704101e2a8b63cc96a3f17a1770c",
+    "results/block00-F4-cache-zcount-csoftmax-directag/rank0.json": "78cead055b9e499b7a7ba3ff9e84b46dcf1d50739573d32f75aef6914b672587",
+    "results/block00-F4-cache-zcount-csoftmax-directag/rank1.json": "968905f52f753b424edb3cf4c80174713f1513615b6bfd1d840c973b4d6b3641",
+    "results/block00-F4-cache-zcount-csoftmax-directag/rank2.json": "52b149c09c6a77a0673bd4ecca0769e6ab94c71e911f8cc0f0524678977ee424",
+    "results/block00-F4-cache-zcount-csoftmax-directag/rank3.json": "9605afa71ab02039158952e51cb193a2b1152aa9834ae2d447aa65b544ca7171",
+    "results/block00-F4-cache-zcount-csoftmax-directag/rank4.json": "2cde52c41a8b48f36376b3478c9f964938d4411f2535959d1d220240b421cfcd",
+    "results/block00-F4-cache-zcount-csoftmax-directag/rank5.json": "cd8d5b9cccc686c999c05ee076aaab4252402c62041a471f7b9e8dbc801d0759",
+    "results/block00-F4-cache-zcount-csoftmax-directag/rank6.json": "e2ee41e5e0c5fa20b0d2ec53382ff722c72f02b5e730b6adda1048cdfda96ca8",
+    "results/block00-F4-cache-zcount-csoftmax-directag/rank7.json": "36d84d6e0b0a9d3e139730ec6924e5790debc52c236964f373cddcd636c819d7",
+    "results/block01-F4-cache-zcount-csoftmax-directag/rank0.json": "1d6ad7c594d0b561507dbaaa7a282f7a711add63fc9f3cdd0805c0b441ca062f",
+    "results/block01-F4-cache-zcount-csoftmax-directag/rank1.json": "cd1dfe4438bc5dedc8641e9b52ce3bb5b82b1660f69c07382e505413ef192a76",
+    "results/block01-F4-cache-zcount-csoftmax-directag/rank2.json": "203df9bed29a20f011dee543c5be97be71394509f3c2f3fb1b7b366429580045",
+    "results/block01-F4-cache-zcount-csoftmax-directag/rank3.json": "37bfffe1cfe4fbb1bcdee169e6e55682ae9f09f998c08b32af3df990a4c94815",
+    "results/block01-F4-cache-zcount-csoftmax-directag/rank4.json": "03bbb81017a31b33337a551fd3adb3bb00dff6a6ce39bb9307cd12f25c82a043",
+    "results/block01-F4-cache-zcount-csoftmax-directag/rank5.json": "0a49d12d3aa57483afac8a45a03da411f39b7604da40ac704c836499d82404ef",
+    "results/block01-F4-cache-zcount-csoftmax-directag/rank6.json": "9c629151b5004225da41234b8d31e69add9fca152995f5de1bef9a22bbcff546",
+    "results/block01-F4-cache-zcount-csoftmax-directag/rank7.json": "e45f59a10b379db8d6f41154358e8eb642538474be581683d01c45b883f5cdad",
+    "results/block01-F4-cache-zcount-csoftmax/rank0.json": "048fb303a59c0c6b84409ec1a956714708d5a420dea5dc98361d38f4f7f7560e",
+    "results/block01-F4-cache-zcount-csoftmax/rank1.json": "1bcb7e99d849a8c789fae2bab719286378f784ed499d0d983251415e468e790a",
+    "results/block01-F4-cache-zcount-csoftmax/rank2.json": "76939e50ba29872a07e701661aa56757254ff657d7b5c7887cabaa24087f8811",
+    "results/block01-F4-cache-zcount-csoftmax/rank3.json": "6fff32322e4cbd886bcf5f74cfcc8e5917abdb452e7df04cc141620722e65773",
+    "results/block01-F4-cache-zcount-csoftmax/rank4.json": "730091631d96f1a498839193fc8a1502b07d513d891588f0a9f0e63f0e15345e",
+    "results/block01-F4-cache-zcount-csoftmax/rank5.json": "3ead3dfa64f12833b2c3213521b7cb48c48cc1f5eaa74b693a007a7d9ec0cb9a",
+    "results/block01-F4-cache-zcount-csoftmax/rank6.json": "6558f81feea5d885088eecedcda46a6333d5f73dd85bf98d460072748abb6661",
+    "results/block01-F4-cache-zcount-csoftmax/rank7.json": "870c1178cf36efcf7d4c74180a166f7a403a0aa12c83ea6b5ba316b178cb379c",
+    "results/block02-F4-cache-zcount-csoftmax/rank0.json": "b8167032c9522d10b1c23f337d5137adb9fb6df9ba11cd569b88eb1301a0e0aa",
+    "results/block02-F4-cache-zcount-csoftmax/rank1.json": "fdd680700f9ba8ef3ae11220b1b679acb9f278d6efd85c6ba76687a35e49f1a0",
+    "results/block02-F4-cache-zcount-csoftmax/rank2.json": "f1fb028dbecd78a95d8d76ecedc738691e9e5c3b2532aff98b15aefd0c837e7d",
+    "results/block02-F4-cache-zcount-csoftmax/rank3.json": "3e6b6cc742bc61ec71ca68afca37295c25895fdf7e304df3504b6620ca37216c",
+    "results/block02-F4-cache-zcount-csoftmax/rank4.json": "2ccfa9d84cb068ad6675ad99354fc931c70358bf76ecafe057655eac8651bee6",
+    "results/block02-F4-cache-zcount-csoftmax/rank5.json": "399b38bedd65ecbab8b7b47cb2ae64b464ef2867c09689a9bf291315a09a26a2",
+    "results/block02-F4-cache-zcount-csoftmax/rank6.json": "20a3ea143370857ff7f34b1b4a648e73f5757980cf85881ad922b4accb2507af",
+    "results/block02-F4-cache-zcount-csoftmax/rank7.json": "b1fca3e49d83bbf803df0bf5692ff0d49f54864a79198ac5cf4f1580f9dad203",
+    "results/block02-F4-cache-zcount-csoftmax-directag/rank0.json": "3ccb032f8721c66c183b5386b9204a529e0b5c477542159d575456a4fe7e9b81",
+    "results/block02-F4-cache-zcount-csoftmax-directag/rank1.json": "e50f594ff4f5700c8ec6a4b33a898722ce7ee28e7609f8e71beed56e9d08fa56",
+    "results/block02-F4-cache-zcount-csoftmax-directag/rank2.json": "5d0b8976cb32cdbe8d1c00ca7fc6666e2ae46e45b1ce67d5c6c527deedaad07e",
+    "results/block02-F4-cache-zcount-csoftmax-directag/rank3.json": "28edb47fca1f125813077cb5fcc2f9964b6b8c3dfea82b40ed30f2905f1abbe9",
+    "results/block02-F4-cache-zcount-csoftmax-directag/rank4.json": "e6ac3dd9c07fb346456e73161f1cc728e220b47f9b3bcb13a8aecc4b06d08f32",
+    "results/block02-F4-cache-zcount-csoftmax-directag/rank5.json": "6703ad0c72cd74deb7c9b99d717190415df98423fba5c6914ed50366a7785195",
+    "results/block02-F4-cache-zcount-csoftmax-directag/rank6.json": "08aeaa2aca3edfa70b20c48abf8dcbbfaec99ff1c03d5b015675ad672f10dfb5",
+    "results/block02-F4-cache-zcount-csoftmax-directag/rank7.json": "bfc3e128d4801342daa7a63107506a7cdcf20c921a314aadcf500aefefc9eafd",
+    "results/block03-F4-cache-zcount-csoftmax-directag/rank0.json": "f6863dc3c65cb891797aa71d17607abce5973dd44ad703ce81f17ab0e8b3ad26",
+    "results/block03-F4-cache-zcount-csoftmax-directag/rank1.json": "009cd10d3ec374f124816f08ebe83bdc56853022fc73b238122c7507d2897aac",
+    "results/block03-F4-cache-zcount-csoftmax-directag/rank2.json": "53c3fcd2d75d26280889976b7b25313a69359f203faaadc3a181774d7aa09cd5",
+    "results/block03-F4-cache-zcount-csoftmax-directag/rank3.json": "7d97158895f079ba2614a48903be4aff610b295abc2e0e23f6801ee4d42966cd",
+    "results/block03-F4-cache-zcount-csoftmax-directag/rank4.json": "d8d1f81bdfd8fd83af51a06edb18aa17bceea7185845d792d4245e5064fa6b36",
+    "results/block03-F4-cache-zcount-csoftmax-directag/rank5.json": "b73bef27cb68b96c2dce539372281e4f630cf29e5e9a91ea6c60a4b0539598e8",
+    "results/block03-F4-cache-zcount-csoftmax-directag/rank6.json": "b7ce75fdcb91f7d08d3d7e555dba4d7f71ce837b7379381d1dc77e80a6359117",
+    "results/block03-F4-cache-zcount-csoftmax-directag/rank7.json": "80bbcd0eab7b861b751c45d01ad137240d95de504f73d7ae17922b70f93b048c",
+    "results/block03-F4-cache-zcount-csoftmax/rank0.json": "f093456fced6b836aa6f36090eb342b76771cc87ab00a70f0a5331b8513beafc",
+    "results/block03-F4-cache-zcount-csoftmax/rank1.json": "51e20827abd33955297c5969cf973eae3dbcb5b73c04507dd17eb4a64a47e6fe",
+    "results/block03-F4-cache-zcount-csoftmax/rank2.json": "0723286efc660e2288c7e6f6816a21354b6f63cd156b93f54252dd4a553f762f",
+    "results/block03-F4-cache-zcount-csoftmax/rank3.json": "13eb3c2784fe83353cb1f889550458829859db197339c2be073a640c0c9f49c6",
+    "results/block03-F4-cache-zcount-csoftmax/rank4.json": "1af614113983a36a12fae8b480793122f4966fc857e5571fa85e942f1189a3fe",
+    "results/block03-F4-cache-zcount-csoftmax/rank5.json": "0b12c5397763974846b71e96eebd5dc6324c148e63de232a5ab0223cd94f0b18",
+    "results/block03-F4-cache-zcount-csoftmax/rank6.json": "d04bac5c8fb7eee88ab58186eca590c81088b96e480d5f7ec315a7f99f7d6ec7",
+    "results/block03-F4-cache-zcount-csoftmax/rank7.json": "a62a48167d47349dd00aa4b8ef8de0fb8ee89bc14a72eaa6de68e0eca3ea7ce1",
+    "results/preflight-F4-cache-zcount-csoftmax/rank0.json": "afcd1f3ddce45aeebb2b05538565f3d5fdb2586ae1c7f098f9dadeea15a6e701",
+    "results/preflight-F4-cache-zcount-csoftmax/rank1.json": "4c5e27f438c1d1fb4ad73569cca96d4736e22e719783d040ab2238954c3729f7",
+    "results/preflight-F4-cache-zcount-csoftmax/rank2.json": "33affca58a311c03eb4222022f61eb7ea746274deb8664b4f3461f7d1b447529",
+    "results/preflight-F4-cache-zcount-csoftmax/rank3.json": "ad7d0f9f2de627376aa0683aac2633b38e2ddc22a778e6328f73d4a628c7735f",
+    "results/preflight-F4-cache-zcount-csoftmax/rank4.json": "072d163d1175fec983c05dfe1bcc2d940a9f8e79bf92f227cb93444800d5d6af",
+    "results/preflight-F4-cache-zcount-csoftmax/rank5.json": "45a0c20bfbd6eb4c98187887dea505c1b2d1e76637e05ec550c72f7fe1233faf",
+    "results/preflight-F4-cache-zcount-csoftmax/rank6.json": "75391d519715b89dd6e6ce6fb4febc86a23ca3f1faa5511909a0d4d806e486fa",
+    "results/preflight-F4-cache-zcount-csoftmax/rank7.json": "40292b1ad4956e5e8bb6419669f6983f032a0d8b1f0a06c1447bf631c22a4437",
+    "results/preflight-F4-cache-zcount-csoftmax-directag/rank0.json": "2dacbbcaadd377f45e94cecfdfd50b82e450ca0c995124280fa220d19046b8c7",
+    "results/preflight-F4-cache-zcount-csoftmax-directag/rank1.json": "0403436f94c382c61a38b33d960fdd462af8cf27738585ae81d4ff8f78d726d1",
+    "results/preflight-F4-cache-zcount-csoftmax-directag/rank2.json": "2d87873cbbd42a9acbe8f1855ea4058d6d8ce1090f48252591a4d2fa388139a3",
+    "results/preflight-F4-cache-zcount-csoftmax-directag/rank3.json": "ecba2bd89c97e534c9899b487898580aef74dc530ef34ec77e9bacb9b8ffa9f7",
+    "results/preflight-F4-cache-zcount-csoftmax-directag/rank4.json": "69a7d01df514df008f0a5db1f8a88fb67d7eab493f7c783c07f2b1d51bf72a0e",
+    "results/preflight-F4-cache-zcount-csoftmax-directag/rank5.json": "f19944277d70a559d0eed13c8d044f39293146ffffef0bc826b8317cecda60be",
+    "results/preflight-F4-cache-zcount-csoftmax-directag/rank6.json": "8c4aab6f64e20701bba8697f062c9bcba928f9ce0a06ca71ff3ebb2b52ea73cb",
+    "results/preflight-F4-cache-zcount-csoftmax-directag/rank7.json": "2854eaa51896339dea993c9bb5c6db09a9d989d5bd515e393b7d0dc94c6cd8ea",
+    "results/mapping-F4-cache-zcount-csoftmax-attn.csv": "a32868e4530590edd04e6c3afe621289463f8fa76e2c1f0f76293821e7154efb",
+    "results/mapping-F4-cache-zcount-csoftmax-mlp.csv": "f37ae5922e4e6459ceba3c5b466c831347d0ac4cf345b030de79f71dac2f47b7",
+    "results/mapping-F4-cache-zcount-csoftmax-directag-attn.csv": "a32868e4530590edd04e6c3afe621289463f8fa76e2c1f0f76293821e7154efb",
+    "results/mapping-F4-cache-zcount-csoftmax-directag-mlp.csv": "f37ae5922e4e6459ceba3c5b466c831347d0ac4cf345b030de79f71dac2f47b7"
+  },
+  "target_validated": false,
+  "limitation": "Identical row-projection sanity measurement only. It exercises neither column activation retention nor optimizer zero-count fusion; complete training measures the same-stream native column AllGather increment on the common MA11 baseline.",
+  "zero_count_policy": "fused_optimizer_zero_count",
+  "activation_policy": "retain_owned_column_input_original_backward"
+}

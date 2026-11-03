@@ -1,0 +1,1212 @@
+{
+  "protocol": "h100-ma17-direct-allgather-v1-operator",
+  "run_id": "c7b8f2765979401fa48e5f0430bf5ac0",
+  "completed": true,
+  "execution_path_validated": true,
+  "target_validated": false,
+  "profiles": {
+    "F4-cache-zcount-csoftmax/rank0/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 63.411500000000004,
+        "decoder_us": 11.152000000000001,
+        "chain_us": 751.336669921875
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank0/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 60.191,
+        "decoder_us": 11.664,
+        "chain_us": 182.514404296875
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank1/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 63.806000000000004,
+        "decoder_us": 10.943999999999999,
+        "chain_us": 734.60009765625
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank1/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 61.657,
+        "decoder_us": 11.264,
+        "chain_us": 180.883544921875
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank2/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 115.428,
+        "decoder_us": 10.752500000000001,
+        "chain_us": 87.665283203125
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank2/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 69.8175,
+        "decoder_us": 11.952,
+        "chain_us": 173.37841796875
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank3/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 71.14349999999999,
+        "decoder_us": 11.232,
+        "chain_us": 709.638427734375
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank3/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 65.4465,
+        "decoder_us": 11.488,
+        "chain_us": 181.00927734375
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank4/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 65.554,
+        "decoder_us": 10.592,
+        "chain_us": 725.97705078125
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank4/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 61.1975,
+        "decoder_us": 10.96,
+        "chain_us": 182.81787109375
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank5/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 63.678,
+        "decoder_us": 10.832,
+        "chain_us": 784.169189453125
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank5/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 54.9785,
+        "decoder_us": 11.2955,
+        "chain_us": 188.43310546875
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank6/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 62.161,
+        "decoder_us": 10.7685,
+        "chain_us": 756.13916015625
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank6/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 60.7665,
+        "decoder_us": 11.184,
+        "chain_us": 184.75537109375
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank7/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 70.0545,
+        "decoder_us": 10.6085,
+        "chain_us": 750.073486328125
+      }
+    },
+    "F4-cache-zcount-csoftmax/rank7/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 61.004000000000005,
+        "decoder_us": 11.872,
+        "chain_us": 138.898681640625
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank0/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 69.788,
+        "decoder_us": 10.944,
+        "chain_us": 367.23681640625
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank0/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 57.072,
+        "decoder_us": 11.6325,
+        "chain_us": 176.22607421875
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank1/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 76.8665,
+        "decoder_us": 11.12,
+        "chain_us": 432.565185546875
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank1/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 57.461,
+        "decoder_us": 11.985,
+        "chain_us": 136.978515625
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank2/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 92.749,
+        "decoder_us": 10.672,
+        "chain_us": 421.174072265625
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank2/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 66.63050000000001,
+        "decoder_us": 11.712,
+        "chain_us": 165.426025390625
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank3/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 74.6875,
+        "decoder_us": 11.072,
+        "chain_us": 432.59521484375
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank3/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 57.6165,
+        "decoder_us": 11.8085,
+        "chain_us": 138.642333984375
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank4/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 73.31450000000001,
+        "decoder_us": 10.3845,
+        "chain_us": 433.4453125
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank4/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 64.38499999999999,
+        "decoder_us": 11.216,
+        "chain_us": 168.513916015625
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank5/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 74.24600000000001,
+        "decoder_us": 10.624500000000001,
+        "chain_us": 434.916748046875
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank5/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 67.99249999999999,
+        "decoder_us": 11.4555,
+        "chain_us": 166.560302734375
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank6/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 90.0635,
+        "decoder_us": 10.721,
+        "chain_us": 88.43359375
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank6/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 64.009,
+        "decoder_us": 11.2965,
+        "chain_us": 167.393310546875
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank7/attn": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 72.449,
+        "decoder_us": 10.592,
+        "chain_us": 436.388427734375
+      }
+    },
+    "F4-cache-zcount-csoftmax-directag/rank7/mlp": {
+      "calls": 4,
+      "execution_path_validated": true,
+      "consumer_add_kernels_per_call": 0,
+      "fused_consumer": true,
+      "launch": {
+        "gemm_grid": [
+          512,
+          1,
+          1
+        ],
+        "gemm_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_grid": [
+          2048,
+          1,
+          1
+        ],
+        "decoder_block": [
+          128,
+          1,
+          1
+        ],
+        "decoder_rows": 1,
+        "receiver_variant": 0,
+        "decoder_kernel": "taco_ma4f_decode_consumer_kernel"
+      },
+      "median_us": {
+        "cpu_us": 54.656,
+        "decoder_us": 11.184,
+        "chain_us": 177.891357421875
+      }
+    }
+  },
+  "evidence_files": {
+    "results/profile-F4-cache-zcount-csoftmax/rank0.json": "4f4ef4ad0d71613e06e78b2a6c61a14af3046273e28e7a4c74cdb98fa02bb528",
+    "results/profile-F4-cache-zcount-csoftmax/rank1.json": "3a04961b49c0e9640fd1fb109ce1bd54fd2850823b7a3a651d248b895dc2a163",
+    "results/profile-F4-cache-zcount-csoftmax/rank2.json": "62c6850df573dcf6ce10602f7242469ccc0461d810f5d976fccb138b572fd95b",
+    "results/profile-F4-cache-zcount-csoftmax/rank3.json": "fb4d97818e1aeaa1cc2e722aa10764a56729687a3c110657a5c94e0d1dc4cdb3",
+    "results/profile-F4-cache-zcount-csoftmax/rank4.json": "da6cadc719d0ee5391bdc00b864afecedf109fde1b7698d2550b206f43912d10",
+    "results/profile-F4-cache-zcount-csoftmax/rank5.json": "57f2dbf72e15643781eaa9f8faf2f5a476f85d34cde588ed79565dc18f998dc6",
+    "results/profile-F4-cache-zcount-csoftmax/rank6.json": "30c547bb5f1f673091cba177196c56fc0402e38109692c0f9bd417196dc32981",
+    "results/profile-F4-cache-zcount-csoftmax/rank7.json": "cbd4219c3a9ccb361412d9e7ad3dcf065b4c71d9db23ffb1343c46818192ce3d",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank0.json": "724c8a8d95e141ffe8964ca8945d1f3d37b2b2941408c23289e438191fde4b01",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank1.json": "23d70589b6c1da38ad22dbb01a0e658204440818e2b95eaff9635beb5a55ad9b",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank2.json": "b581b10f656afe7d67c0470e79c424151358a9c29243cfc0f30fa664b98a0884",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank3.json": "03520154eb02eeb6c0694e466cef7f5e3833bfc528ffdd99afd9b5c9130b01e9",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank4.json": "8119fd7359eb5860f56ece456f97893b228e8b201d98217c03375cc7b24624ce",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank5.json": "ba77f92e24c6cd88fdeda488657aadaf805fa43e636ba49afd4a79a6962de58a",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank6.json": "9c742b111d6b87d54e2b53889ab5b0d0e2159832f323d5fa48b43beb8def690f",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank7.json": "813c69a39a49754d5b0e6f47d771a19594e9002f352f22b653449a03771f77b1",
+    "results/profile-F4-cache-zcount-csoftmax/rank0-attn-profile.json.gz": "0707bbd8480b5c0e148079a6116f082011922049163d487dd8cb9afe79e0a40b",
+    "results/profile-F4-cache-zcount-csoftmax/rank0-mlp-profile.json.gz": "1e8667e2938f10e0aa56f024deb014d230ee82dc019deee0549b732cb9079dcd",
+    "results/profile-F4-cache-zcount-csoftmax/rank1-attn-profile.json.gz": "873f18bd7e78bd5e814e1d04c891b130b415f420f25c9549b88e060a1e0a2c5f",
+    "results/profile-F4-cache-zcount-csoftmax/rank1-mlp-profile.json.gz": "c4ec72b192ce0f362b4795e83f7fb6e1d9b00cdf759e48235cdfa430ce710b5a",
+    "results/profile-F4-cache-zcount-csoftmax/rank2-attn-profile.json.gz": "9fd8681412a0aa3aea20ff41f310d6161778ed5f8a3ec3f868414e050a0a4af5",
+    "results/profile-F4-cache-zcount-csoftmax/rank2-mlp-profile.json.gz": "01d74d9c80f2644f454b4b82ddc3d626401fc9db87f9641814d10987919a5141",
+    "results/profile-F4-cache-zcount-csoftmax/rank3-attn-profile.json.gz": "99d7fdad03f0f377b7a9ebe36168a53a53d97f9dc4f3f327b48950f13cd661d0",
+    "results/profile-F4-cache-zcount-csoftmax/rank3-mlp-profile.json.gz": "df89c161a0fc50093f445d222b1c836370d78e42417fe24cf8781eed2305f8ca",
+    "results/profile-F4-cache-zcount-csoftmax/rank4-attn-profile.json.gz": "627eb5e17a350dc1d1e6cfa9506abd72cfd64abce576601fa41e284f0dcc7c9d",
+    "results/profile-F4-cache-zcount-csoftmax/rank4-mlp-profile.json.gz": "b9d06c9a12fc564fee210aa48965eda1bcd9cbeba55752d21809925f0de24676",
+    "results/profile-F4-cache-zcount-csoftmax/rank5-attn-profile.json.gz": "8ddbf3d41d6016343a4da16def42bb988f8a33c306925822d14a259805c5d477",
+    "results/profile-F4-cache-zcount-csoftmax/rank5-mlp-profile.json.gz": "875efec1e1e646c9d1378a94a2f6a1e9a2054cac443d8cbdea46dc3fdcbb6bb7",
+    "results/profile-F4-cache-zcount-csoftmax/rank6-attn-profile.json.gz": "04ce8f1b2ba16b21671fcb6c1450a1e55a72f0cd643b4f1c1c8d355976e746cf",
+    "results/profile-F4-cache-zcount-csoftmax/rank6-mlp-profile.json.gz": "c3f745abfd41680ccabfbc6041a954eb0cd6d5dc12c02becd579a629c09ad6bf",
+    "results/profile-F4-cache-zcount-csoftmax/rank7-attn-profile.json.gz": "97aad7220ba5e79edf08f7a06c403bd28baae42a32947d439be000a9ba4f6ad5",
+    "results/profile-F4-cache-zcount-csoftmax/rank7-mlp-profile.json.gz": "93c3182c1644235891e114fc83b22fb08406c7b0754f34afe6c4cb1b091c3fc2",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank0-attn-profile.json.gz": "37fd55014c44b2eff1ca6b48915c4dd9e567eadc3030e6e71f3caf2111c80a28",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank0-mlp-profile.json.gz": "9608a27c310effd8256084f308a421c9b769f87911e178bda93a7b27c01b96f6",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank1-attn-profile.json.gz": "bc673c50d3e734a6b1bf27e5d24557cf188b1e257fc1263c76338e4e446f0373",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank1-mlp-profile.json.gz": "52717c8c069a0c0ff11a4ce94b015563696083ed18dcacbd04f94f18b5f46a45",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank2-attn-profile.json.gz": "fb6fabd8e969557b3bc7ff6518c270d6d173598314a08f9ae414c480743a74f5",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank2-mlp-profile.json.gz": "97bc7b6255c83b92ac9101da3ffa6dfea00b51757b4209eec523ad760d8d7ea0",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank3-attn-profile.json.gz": "7d0244fd37f3bec8ed0e2d96bbd3256571623982fff2fa745a319950f56ef711",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank3-mlp-profile.json.gz": "49026d70a24ce4c561262ee9757d06dd4136c5bbadb6c0ba94b868bcccac6103",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank4-attn-profile.json.gz": "137227b94d355b41e48fcfeddd8e8bb067fc8574176acc338fbd232d70e55fbb",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank4-mlp-profile.json.gz": "a876a1d2feadbc91a812af0bc49663ce6ccc843bd8ea9b63f9c208719259ffd8",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank5-attn-profile.json.gz": "e5cf2d196d18d6692e7649748a701af95ad32676f14c80a7fb69039158f4088f",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank5-mlp-profile.json.gz": "241c11e36395af8a9dde827a954617e69496b78830d66d183937e86577f4a0a1",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank6-attn-profile.json.gz": "66c9ccff95e87810bcaadcf0333ef98ca4eb7146d7f28262f74f9e48bd0bda9a",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank6-mlp-profile.json.gz": "2fc02db14e8499752cee600e798279263ef395f4ad051d0379d3afc5fbc40013",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank7-attn-profile.json.gz": "65b8a540fab5fcb08b1697a8e50fd6c0dd7b3a136425b828154cf5908edeacc2",
+    "results/profile-F4-cache-zcount-csoftmax-directag/rank7-mlp-profile.json.gz": "7ab495ce37f663f79afb1c6d4a5a553b3fb99ec94d05254cd1f76909e2369a24"
+  },
+  "limitation": "Identical row-projection sanity measurement only. It exercises neither column activation retention nor optimizer zero-count fusion; complete training measures the same-stream native column AllGather increment on the common MA11 baseline."
+}

@@ -1,0 +1,10 @@
+{
+  "ready": true,
+  "pid": 1845225,
+  "ppid": 1,
+  "sid": 1845224,
+  "pgid": 1845224,
+  "cgroup": "0::/\n",
+  "repo": "/workspace/TempName-New",
+  "batch": "/workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-175707-258640"
+}

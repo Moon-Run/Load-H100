@@ -1,0 +1,65 @@
+{
+  "run_id": "c7b8f2765979401fa48e5f0430bf5ac0",
+  "jobs": [
+    {
+      "arm": "F4-cache-zcount-csoftmax",
+      "block": -1,
+      "index": 0,
+      "directory": "preflight-F4-cache-zcount-csoftmax"
+    },
+    {
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "block": -1,
+      "index": 1,
+      "directory": "preflight-F4-cache-zcount-csoftmax-directag"
+    },
+    {
+      "block": 0,
+      "arm": "F4-cache-zcount-csoftmax",
+      "index": 0,
+      "directory": "block00-F4-cache-zcount-csoftmax"
+    },
+    {
+      "block": 0,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 1,
+      "directory": "block00-F4-cache-zcount-csoftmax-directag"
+    },
+    {
+      "block": 1,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 2,
+      "directory": "block01-F4-cache-zcount-csoftmax-directag"
+    },
+    {
+      "block": 1,
+      "arm": "F4-cache-zcount-csoftmax",
+      "index": 3,
+      "directory": "block01-F4-cache-zcount-csoftmax"
+    },
+    {
+      "block": 2,
+      "arm": "F4-cache-zcount-csoftmax",
+      "index": 4,
+      "directory": "block02-F4-cache-zcount-csoftmax"
+    },
+    {
+      "block": 2,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 5,
+      "directory": "block02-F4-cache-zcount-csoftmax-directag"
+    },
+    {
+      "block": 3,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 6,
+      "directory": "block03-F4-cache-zcount-csoftmax-directag"
+    },
+    {
+      "block": 3,
+      "arm": "F4-cache-zcount-csoftmax",
+      "index": 7,
+      "directory": "block03-F4-cache-zcount-csoftmax"
+    }
+  ]
+}

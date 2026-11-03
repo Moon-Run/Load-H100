@@ -1,0 +1,87 @@
+START smoke-F4-cache-zcount-csoftmax
+START smoke-F4-cache-zcount-csoftmax-directag
+START compare1/block00-F4-cache-zcount-csoftmax
+START compare1/block00-F4-cache-zcount-csoftmax-directag
+START compare1/block01-F4-cache-zcount-csoftmax-directag
+START compare1/block01-F4-cache-zcount-csoftmax
+START compare1/block02-F4-cache-zcount-csoftmax
+START compare1/block02-F4-cache-zcount-csoftmax-directag
+START compare1/block03-F4-cache-zcount-csoftmax-directag
+START compare1/block03-F4-cache-zcount-csoftmax
+{
+  "comparisons": {
+    "compare1": {
+      "run_id": "bca7a0f473f3424ea71e3aaa588cb843",
+      "rounds": {
+        "round1": {
+          "mean_ms": {
+            "F4-cache-zcount-csoftmax": 327.85234274342656,
+            "F4-cache-zcount-csoftmax-directag": 318.07528341189027
+          },
+          "median_ms": {
+            "F4-cache-zcount-csoftmax": 327.85234274342656,
+            "F4-cache-zcount-csoftmax-directag": 318.07528341189027
+          },
+          "comparisons": {
+            "F4-cache-zcount-csoftmax-directag/F4-cache-zcount-csoftmax": {
+              "percent": 2.947947408926721,
+              "ci95": [
+                1.4846553565975529,
+                4.389504536223033
+              ],
+              "paired_blocks": 2
+            }
+          }
+        },
+        "round2": {
+          "mean_ms": {
+            "F4-cache-zcount-csoftmax": 322.5965840741992,
+            "F4-cache-zcount-csoftmax-directag": 319.9237781763077
+          },
+          "median_ms": {
+            "F4-cache-zcount-csoftmax": 322.5965840741992,
+            "F4-cache-zcount-csoftmax-directag": 319.9237781763077
+          },
+          "comparisons": {
+            "F4-cache-zcount-csoftmax-directag/F4-cache-zcount-csoftmax": {
+              "percent": 0.8191224973176814,
+              "ci95": [
+                -1.6408049793910529,
+                3.21951440470567
+              ],
+              "paired_blocks": 2
+            }
+          }
+        },
+        "combined": {
+          "mean_ms": {
+            "F4-cache-zcount-csoftmax": 325.2244634088129,
+            "F4-cache-zcount-csoftmax-directag": 318.999530794099
+          },
+          "median_ms": {
+            "F4-cache-zcount-csoftmax": 322.73744609206915,
+            "F4-cache-zcount-csoftmax-directag": 319.9237781763077
+          },
+          "comparisons": {
+            "F4-cache-zcount-csoftmax-directag/F4-cache-zcount-csoftmax": {
+              "percent": 1.8893087404888265,
+              "ci95": [
+                -0.4033078535513601,
+                3.8062882565028544
+              ],
+              "paired_blocks": 4
+            }
+          }
+        }
+      },
+      "increment_over_MA11_validated": {
+        "F4-cache-zcount-csoftmax-directag": false
+      },
+      "target_point_observed": false,
+      "target_validated": false
+    }
+  },
+  "increment_over_MA11_validated": {
+    "F4-cache-zcount-csoftmax-directag": false
+  }
+}
