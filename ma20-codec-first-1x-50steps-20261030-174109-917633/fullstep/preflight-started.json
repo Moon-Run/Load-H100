@@ -1,0 +1,21 @@
+{
+  "run_id": "293e401fd8fa4bf096d8908a3a555f7e",
+  "jobs": [
+    {
+      "arm": "MA11",
+      "mode": "smoke",
+      "trial": 0,
+      "block": -1,
+      "index": -1,
+      "directory": "smoke"
+    },
+    {
+      "arm": "Q0",
+      "mode": "smoke",
+      "trial": 0,
+      "block": -1,
+      "index": -1,
+      "directory": "smoke"
+    }
+  ]
+}

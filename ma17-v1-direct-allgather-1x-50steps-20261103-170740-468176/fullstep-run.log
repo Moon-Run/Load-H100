@@ -1,0 +1,17 @@
+START smoke-F4-cache-zcount-csoftmax-directag
+START compare1/block00-F4-cache-zcount-csoftmax-directag
+START compare1/block01-F4-cache-zcount-csoftmax-directag
+START compare1/block02-F4-cache-zcount-csoftmax-directag
+START compare1/block03-F4-cache-zcount-csoftmax-directag
+Traceback (most recent call last):
+  File "/workspace/TempName-New/tools/h100/phase6/candidate_fullstep.py", line 299, in <module>
+    main()
+  File "/workspace/TempName-New/tools/h100/phase6/candidate_fullstep.py", line 295, in main
+    globals()[args.action](args)
+  File "/workspace/TempName-New/tools/h100/phase6/candidate_fullstep.py", line 262, in run
+    report(root)
+  File "/workspace/TempName-New/tools/h100/phase6/candidate_fullstep.py", line 166, in report
+    require(len(values) == 8, 'Missing candidate timing windows')
+  File "/workspace/TempName-New/tools/h100/phase6/candidate_fullstep.py", line 28, in require
+    raise ValueError(message)
+ValueError: Missing candidate timing windows

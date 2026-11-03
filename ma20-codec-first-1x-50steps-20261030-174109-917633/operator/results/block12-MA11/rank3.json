@@ -1,0 +1,343 @@
+{
+  "protocol": "h100-ma20-codec-first-v1-operator",
+  "run_id": "33e3685e6d7c4c8983e3e80e81c6c973",
+  "plan_sha256": "913598ad88afe5d4636386f14adb8e483c8a6c3da7ee03cdf590c2a63dfb8597",
+  "job": {
+    "arm": "MA11",
+    "block": 12,
+    "directory": "block12-MA11",
+    "index": 84,
+    "split": "heldout"
+  },
+  "rank": 3,
+  "completed": true,
+  "loaded_libraries": {
+    "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633/build/MA11/python/flux/lib/libflux_cuda.so": "3fd86ae8cf892cf3775121bd29997d4beba9e5a68bf7b316f58843b7a8bd4482",
+    "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633/build/MA11/python/flux/lib/libflux_cuda_ths_op.so": "d77662e3dd16ccf33024f95b2cadcd7ecd04c473a205aa729cdbe73d7ce564e5",
+    "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633/build/MA11/python/flux_ths_pybind.cpython-310-x86_64-linux-gnu.so": "cba05db1e7ddafb3e4532191628660b5955d0d1aab0000bc019956606c5ae42d"
+  },
+  "environment": {
+    "CUDA_DEVICE_MAX_CONNECTIONS": "1",
+    "FLUX_GEMM_RS_GEMM_ONLY": "1",
+    "NCCL_NVLS_ENABLE": "0",
+    "NCCL_DEBUG": "WARN",
+    "TORCH_NCCL_ASYNC_ERROR_HANDLING": "1"
+  },
+  "hardware": {
+    "host": "10-118-122-131",
+    "devices": [
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "26e67438-f877-3123-29e0-d33d473c8141",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "7f7217aa-30c6-c324-7a2a-47b3da64ed90",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "aea7e493-405c-304c-b5c5-28cd9624699e",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "3e7023fb-d34e-400f-6e3e-666145b657cf",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "00c0a7d8-cbb2-4acb-3fa0-5a7d4e0f899d",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "7f399bc6-8077-f309-92c7-538dccc06f42",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "0d74eef5-ceef-e92e-242e-36ee582fac83",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "9da6bcea-1b20-252e-4819-eb5699a9b1a1",
+        "sm_count": 132
+      }
+    ]
+  },
+  "software": {
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "nccl": [
+      2,
+      21,
+      5
+    ],
+    "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]"
+  },
+  "roles": {
+    "attn": {
+      "shape": [
+        2048,
+        4096,
+        512
+      ],
+      "gpu_mask_before": [
+        {
+          "slot": 0,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "696a0a4644b4281a9d113a06385213b7796fead12bfdddbc058e405f25eea4c7",
+          "selected_per_source": [
+            7,
+            7,
+            7,
+            7,
+            4,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "slot": 1,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "696a0a4644b4281a9d113a06385213b7796fead12bfdddbc058e405f25eea4c7",
+          "selected_per_source": [
+            7,
+            7,
+            7,
+            7,
+            4,
+            7,
+            7,
+            7
+          ]
+        }
+      ],
+      "checks": [],
+      "retained": [],
+      "wall_us": 90.04604071378708,
+      "inputs": [
+        "709579fd4ff499057225dc7e43371a139e876e67b9c66ad06f173cb57aaa9d05",
+        "70b44856f751ba9ba2addd5ce6d0e03412ee9ae365cdb58396b15b9a3106612d",
+        "933a39a5e2e84f122b9a90765dd67a029d7294900edda0424e64415656c9c534",
+        "b87b9ee9a82c1884805a42fc0d18ffb9fbcd635b03e2fd0b06ed4ae04a5cf675"
+      ],
+      "final_correctness": {
+        "max_abs": 0.00390625,
+        "relative_l2": 0.0005228290405607496,
+        "protocol_relative_l2": 0.0,
+        "budget_vs_bf16": 0.05,
+        "budget_vs_codec": 0.01,
+        "passed": true
+      },
+      "gpu_mask_after": [
+        {
+          "slot": 0,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "696a0a4644b4281a9d113a06385213b7796fead12bfdddbc058e405f25eea4c7",
+          "selected_per_source": [
+            7,
+            7,
+            7,
+            7,
+            4,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "slot": 1,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "696a0a4644b4281a9d113a06385213b7796fead12bfdddbc058e405f25eea4c7",
+          "selected_per_source": [
+            7,
+            7,
+            7,
+            7,
+            4,
+            7,
+            7,
+            7
+          ]
+        }
+      ],
+      "consumer": [
+        {
+          "slot": 0,
+          "protocol_version": 1,
+          "initializations": 1,
+          "successful_calls": 60,
+          "bias_residual_calls": 60,
+          "bound_k": 512,
+          "local_packet_ptr": 140176391143424,
+          "failed": false
+        },
+        {
+          "slot": 1,
+          "protocol_version": 1,
+          "initializations": 1,
+          "successful_calls": 60,
+          "bias_residual_calls": 60,
+          "bound_k": 512,
+          "local_packet_ptr": 140176609247232,
+          "failed": false
+        }
+      ]
+    },
+    "mlp": {
+      "shape": [
+        2048,
+        4096,
+        2048
+      ],
+      "gpu_mask_before": [
+        {
+          "slot": 0,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "c65bf4568a620e6f1261e6cbfc5dd3ea8feee430189829b671729f1a48efc3c4",
+          "selected_per_source": [
+            7,
+            7,
+            7,
+            7,
+            1,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "slot": 1,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "c65bf4568a620e6f1261e6cbfc5dd3ea8feee430189829b671729f1a48efc3c4",
+          "selected_per_source": [
+            7,
+            7,
+            7,
+            7,
+            1,
+            7,
+            7,
+            7
+          ]
+        }
+      ],
+      "checks": [],
+      "retained": [],
+      "wall_us": 139.613077044487,
+      "inputs": [
+        "9884a691ca41db2d8f0f8c3d24f7d852cb2a6865ad42ea4d7e87dec9159d70fc",
+        "761c1a8637c4ff11d2548f33056a1717ddec9c33ac29b34b9869ef2f862d3437",
+        "933a39a5e2e84f122b9a90765dd67a029d7294900edda0424e64415656c9c534",
+        "b87b9ee9a82c1884805a42fc0d18ffb9fbcd635b03e2fd0b06ed4ae04a5cf675"
+      ],
+      "final_correctness": {
+        "max_abs": 0.0078125,
+        "relative_l2": 0.0009071859515160019,
+        "protocol_relative_l2": 3.34800281692587e-06,
+        "budget_vs_bf16": 0.05,
+        "budget_vs_codec": 0.01,
+        "passed": true
+      },
+      "gpu_mask_after": [
+        {
+          "slot": 0,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "c65bf4568a620e6f1261e6cbfc5dd3ea8feee430189829b671729f1a48efc3c4",
+          "selected_per_source": [
+            7,
+            7,
+            7,
+            7,
+            1,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "slot": 1,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "c65bf4568a620e6f1261e6cbfc5dd3ea8feee430189829b671729f1a48efc3c4",
+          "selected_per_source": [
+            7,
+            7,
+            7,
+            7,
+            1,
+            7,
+            7,
+            7
+          ]
+        }
+      ],
+      "consumer": [
+        {
+          "slot": 0,
+          "protocol_version": 1,
+          "initializations": 1,
+          "successful_calls": 60,
+          "bias_residual_calls": 60,
+          "bound_k": 2048,
+          "local_packet_ptr": 140174967177216,
+          "failed": false
+        },
+        {
+          "slot": 1,
+          "protocol_version": 1,
+          "initializations": 1,
+          "successful_calls": 60,
+          "bias_residual_calls": 60,
+          "bound_k": 2048,
+          "local_packet_ptr": 140176598761472,
+          "failed": false
+        }
+      ]
+    }
+  }
+}

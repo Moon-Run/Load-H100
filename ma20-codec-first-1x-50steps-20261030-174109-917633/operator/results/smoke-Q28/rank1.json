@@ -1,0 +1,595 @@
+{
+  "protocol": "h100-ma20-codec-first-v1-operator",
+  "run_id": "33e3685e6d7c4c8983e3e80e81c6c973",
+  "plan_sha256": "913598ad88afe5d4636386f14adb8e483c8a6c3da7ee03cdf590c2a63dfb8597",
+  "job": {
+    "arm": "Q28",
+    "block": -1,
+    "directory": "smoke-Q28",
+    "index": 4,
+    "split": "smoke"
+  },
+  "rank": 1,
+  "completed": true,
+  "loaded_libraries": {
+    "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633/build/Q28/python/flux/lib/libflux_cuda.so": "69faaf14d577a3bb9a06979995182081bab095b3827d875a0af24dcd79d2cbd4",
+    "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633/build/Q28/python/flux/lib/libflux_cuda_ths_op.so": "06590c4c0aa3102e2b9f166aa2f346413fb7b37272b432f7814a402f88bbc6dc",
+    "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633/build/Q28/python/flux_ths_pybind.cpython-310-x86_64-linux-gnu.so": "d9dac6e47a8d5cc73a2cc55ed576853d482f30e65831e3d55751e15ec4740c02"
+  },
+  "environment": {
+    "CUDA_DEVICE_MAX_CONNECTIONS": "1",
+    "FLUX_GEMM_RS_GEMM_ONLY": "1",
+    "NCCL_NVLS_ENABLE": "0",
+    "NCCL_DEBUG": "WARN",
+    "TORCH_NCCL_ASYNC_ERROR_HANDLING": "1"
+  },
+  "hardware": {
+    "host": "10-118-122-131",
+    "devices": [
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "26e67438-f877-3123-29e0-d33d473c8141",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "7f7217aa-30c6-c324-7a2a-47b3da64ed90",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "aea7e493-405c-304c-b5c5-28cd9624699e",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "3e7023fb-d34e-400f-6e3e-666145b657cf",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "00c0a7d8-cbb2-4acb-3fa0-5a7d4e0f899d",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "7f399bc6-8077-f309-92c7-538dccc06f42",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "0d74eef5-ceef-e92e-242e-36ee582fac83",
+        "sm_count": 132
+      },
+      {
+        "name": "NVIDIA H100 80GB HBM3",
+        "uuid": "9da6bcea-1b20-252e-4819-eb5699a9b1a1",
+        "sm_count": 132
+      }
+    ]
+  },
+  "software": {
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "nccl": [
+      2,
+      21,
+      5
+    ],
+    "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]"
+  },
+  "roles": {
+    "attn": {
+      "shape": [
+        2048,
+        4096,
+        512
+      ],
+      "gpu_mask_before": [
+        {
+          "slot": 0,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "0c77feb6c7a05ffe2cc1df5efd2c677f50e9df49d4c892d3a1d317c53443eefd",
+          "selected_per_source": [
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ]
+        },
+        {
+          "slot": 1,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "0c77feb6c7a05ffe2cc1df5efd2c677f50e9df49d4c892d3a1d317c53443eefd",
+          "selected_per_source": [
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "seed": 817,
+          "case": "zero",
+          "correctness": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 817,
+          "case": "small",
+          "correctness": {
+            "max_abs": 3.0517578125e-05,
+            "relative_l2": 1.0665169561264787e-07,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 817,
+          "case": "outlier",
+          "correctness": {
+            "max_abs": 0.015625,
+            "relative_l2": 0.001626978815867927,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 817,
+          "case": "random",
+          "correctness": {
+            "max_abs": 0.0078125,
+            "relative_l2": 0.0008480818633763785,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 919,
+          "case": "zero",
+          "correctness": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 919,
+          "case": "small",
+          "correctness": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 919,
+          "case": "outlier",
+          "correctness": {
+            "max_abs": 0.015625,
+            "relative_l2": 0.001569405629118561,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 919,
+          "case": "random",
+          "correctness": {
+            "max_abs": 0.0078125,
+            "relative_l2": 0.0008440608463136293,
+            "protocol_relative_l2": 6.80589543677472e-06,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        }
+      ],
+      "retained": [
+        {
+          "generation": 0,
+          "passed": true,
+          "output": "13a2717f8f988e288c4e226f0fcebddad0d21a7547a4e3feea2a274e881eb272",
+          "reference": "13a2717f8f988e288c4e226f0fcebddad0d21a7547a4e3feea2a274e881eb272",
+          "pointer": 140017192140800
+        },
+        {
+          "generation": 1,
+          "passed": true,
+          "output": "4c30caf858ce9260ce53fa97789abb2be61929d2e533228aa2a708d79c748671",
+          "reference": "4c30caf858ce9260ce53fa97789abb2be61929d2e533228aa2a708d79c748671",
+          "pointer": 140016839819264
+        },
+        {
+          "generation": 2,
+          "passed": true,
+          "output": "7e94ac2b2c4b625cea4b94d7e99f85dd8becc9c3ed76298506cbe030a1f0ccf6",
+          "reference": "7e94ac2b2c4b625cea4b94d7e99f85dd8becc9c3ed76298506cbe030a1f0ccf6",
+          "pointer": 140016844013568
+        },
+        {
+          "generation": 3,
+          "passed": true,
+          "output": "591330e0ff49ef0b843147589cfe30745191356bdd33c047854bb6cfcb7ef265",
+          "reference": "591330e0ff49ef0b843147589cfe30745191356bdd33c047854bb6cfcb7ef265",
+          "pointer": 140016885956608
+        },
+        {
+          "generation": 4,
+          "passed": true,
+          "output": "b96abb2a627bbdb9191a13b69e3de415565d0591afca8402ac5de10ccaefa03c",
+          "reference": "b96abb2a627bbdb9191a13b69e3de415565d0591afca8402ac5de10ccaefa03c",
+          "pointer": 140016879665152
+        },
+        {
+          "generation": 5,
+          "passed": true,
+          "output": "98dc8bf6c653361325aedca9f80d42b8626deb3a6413a38a3d134e8a7e23f2cf",
+          "reference": "98dc8bf6c653361325aedca9f80d42b8626deb3a6413a38a3d134e8a7e23f2cf",
+          "pointer": 140016858693632
+        }
+      ],
+      "wall_us": null,
+      "gpu_mask_after": [
+        {
+          "slot": 0,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "0c77feb6c7a05ffe2cc1df5efd2c677f50e9df49d4c892d3a1d317c53443eefd",
+          "selected_per_source": [
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ]
+        },
+        {
+          "slot": 1,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "0c77feb6c7a05ffe2cc1df5efd2c677f50e9df49d4c892d3a1d317c53443eefd",
+          "selected_per_source": [
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ]
+        }
+      ],
+      "consumer": [
+        {
+          "slot": 0,
+          "protocol_version": 1,
+          "initializations": 1,
+          "successful_calls": 7,
+          "bias_residual_calls": 7,
+          "bound_k": 512,
+          "local_packet_ptr": 140018819530752,
+          "failed": false
+        },
+        {
+          "slot": 1,
+          "protocol_version": 1,
+          "initializations": 1,
+          "successful_calls": 7,
+          "bias_residual_calls": 7,
+          "bound_k": 512,
+          "local_packet_ptr": 140019037634560,
+          "failed": false
+        }
+      ]
+    },
+    "mlp": {
+      "shape": [
+        2048,
+        4096,
+        2048
+      ],
+      "gpu_mask_before": [
+        {
+          "slot": 0,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "05e2e0d9dbaa841cfd3b2a72d3629917a118034837110f8e0a5e7ab1ac6900a7",
+          "selected_per_source": [
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ]
+        },
+        {
+          "slot": 1,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "05e2e0d9dbaa841cfd3b2a72d3629917a118034837110f8e0a5e7ab1ac6900a7",
+          "selected_per_source": [
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "seed": 817,
+          "case": "zero",
+          "correctness": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 817,
+          "case": "small",
+          "correctness": {
+            "max_abs": 0.00048828125,
+            "relative_l2": 1.7064271298023659e-06,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 817,
+          "case": "outlier",
+          "correctness": {
+            "max_abs": 0.03125,
+            "relative_l2": 0.002786981345422344,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 817,
+          "case": "random",
+          "correctness": {
+            "max_abs": 0.0078125,
+            "relative_l2": 0.0014069448057742683,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 919,
+          "case": "zero",
+          "correctness": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 919,
+          "case": "small",
+          "correctness": {
+            "max_abs": 7.62939453125e-06,
+            "relative_l2": 2.6697601711722075e-08,
+            "protocol_relative_l2": 0.0,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 919,
+          "case": "outlier",
+          "correctness": {
+            "max_abs": 0.03125,
+            "relative_l2": 0.0029677333707243537,
+            "protocol_relative_l2": 3.0797606025089653e-06,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        },
+        {
+          "seed": 919,
+          "case": "random",
+          "correctness": {
+            "max_abs": 0.0078125,
+            "relative_l2": 0.0014011236996607109,
+            "protocol_relative_l2": 1.6805847090319663e-06,
+            "budget_vs_bf16": 0.05,
+            "budget_vs_codec": 0.01,
+            "passed": true
+          }
+        }
+      ],
+      "retained": [
+        {
+          "generation": 0,
+          "passed": true,
+          "output": "271d31be0799d3aa0b1ff784c53b7de34e8b52f5ffdced8a3678f3a239a888c2",
+          "reference": "271d31be0799d3aa0b1ff784c53b7de34e8b52f5ffdced8a3678f3a239a888c2",
+          "pointer": 140016839819264
+        },
+        {
+          "generation": 1,
+          "passed": true,
+          "output": "f127b15c91197922371ca16aea3290f557490ce175c8623e9fa41e1b6e5d5646",
+          "reference": "f127b15c91197922371ca16aea3290f557490ce175c8623e9fa41e1b6e5d5646",
+          "pointer": 140016854499328
+        },
+        {
+          "generation": 2,
+          "passed": true,
+          "output": "a72b4af550153c073d61ee94ef8178de82b492d57469c5e52b8f67222f5366a0",
+          "reference": "a72b4af550153c073d61ee94ef8178de82b492d57469c5e52b8f67222f5366a0",
+          "pointer": 140016869179392
+        },
+        {
+          "generation": 3,
+          "passed": true,
+          "output": "93029150f7a1467f8213fc8c6ca7e65119c35dcb326f5730acc95dd27831efc0",
+          "reference": "93029150f7a1467f8213fc8c6ca7e65119c35dcb326f5730acc95dd27831efc0",
+          "pointer": 140016959356928
+        },
+        {
+          "generation": 4,
+          "passed": true,
+          "output": "1a2c22759d327c6e9ce6be1e522e011668ea4a5dd06becae7107f49f119a2ff4",
+          "reference": "1a2c22759d327c6e9ce6be1e522e011668ea4a5dd06becae7107f49f119a2ff4",
+          "pointer": 140016971939840
+        },
+        {
+          "generation": 5,
+          "passed": true,
+          "output": "4275c00893b48adc0a5f399e48e2bab7c3a9764903421db5161edc1448ccc169",
+          "reference": "4275c00893b48adc0a5f399e48e2bab7c3a9764903421db5161edc1448ccc169",
+          "pointer": 140017194237952
+        }
+      ],
+      "wall_us": null,
+      "gpu_mask_after": [
+        {
+          "slot": 0,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "05e2e0d9dbaa841cfd3b2a72d3629917a118034837110f8e0a5e7ab1ac6900a7",
+          "selected_per_source": [
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ]
+        },
+        {
+          "slot": 1,
+          "device_readback": true,
+          "dtype": "torch.uint8",
+          "shape": [
+            8,
+            512
+          ],
+          "mask_sha256": "05e2e0d9dbaa841cfd3b2a72d3629917a118034837110f8e0a5e7ab1ac6900a7",
+          "selected_per_source": [
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ]
+        }
+      ],
+      "consumer": [
+        {
+          "slot": 0,
+          "protocol_version": 1,
+          "initializations": 1,
+          "successful_calls": 7,
+          "bias_residual_calls": 7,
+          "bound_k": 2048,
+          "local_packet_ptr": 140017229889536,
+          "failed": false
+        },
+        {
+          "slot": 1,
+          "protocol_version": 1,
+          "initializations": 1,
+          "successful_calls": 7,
+          "bias_residual_calls": 7,
+          "bound_k": 2048,
+          "local_packet_ptr": 140019027148800,
+          "failed": false
+        }
+      ]
+    }
+  }
+}

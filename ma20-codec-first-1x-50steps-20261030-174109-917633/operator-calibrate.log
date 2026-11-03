@@ -1,0 +1,13 @@
+{
+  "candidate": "Q0",
+  "proposed_candidate": "Q0",
+  "reason": "independent_heldout_confirmed",
+  "heldout": {
+    "percent": 9.06646979665755,
+    "ci95": [
+      5.276456406809748,
+      15.920986810306593
+    ],
+    "paired_blocks": 7
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "run_id": "293e401fd8fa4bf096d8908a3a555f7e",
+  "jobs": [
+    {
+      "trial": 1,
+      "block": 0,
+      "round": 1,
+      "index": 0,
+      "arm": "MA11",
+      "mode": "timing",
+      "directory": "compare1/block00-MA11"
+    },
+    {
+      "trial": 1,
+      "block": 0,
+      "round": 1,
+      "index": 1,
+      "arm": "Q0",
+      "mode": "timing",
+      "directory": "compare1/block00-Q0"
+    },
+    {
+      "trial": 1,
+      "block": 1,
+      "round": 1,
+      "index": 2,
+      "arm": "Q0",
+      "mode": "timing",
+      "directory": "compare1/block01-Q0"
+    },
+    {
+      "trial": 1,
+      "block": 1,
+      "round": 1,
+      "index": 3,
+      "arm": "MA11",
+      "mode": "timing",
+      "directory": "compare1/block01-MA11"
+    },
+    {
+      "trial": 1,
+      "block": 2,
+      "round": 1,
+      "index": 4,
+      "arm": "MA11",
+      "mode": "timing",
+      "directory": "compare1/block02-MA11"
+    },
+    {
+      "trial": 1,
+      "block": 2,
+      "round": 1,
+      "index": 5,
+      "arm": "Q0",
+      "mode": "timing",
+      "directory": "compare1/block02-Q0"
+    },
+    {
+      "trial": 1,
+      "block": 3,
+      "round": 1,
+      "index": 6,
+      "arm": "Q0",
+      "mode": "timing",
+      "directory": "compare1/block03-Q0"
+    },
+    {
+      "trial": 1,
+      "block": 3,
+      "round": 1,
+      "index": 7,
+      "arm": "MA11",
+      "mode": "timing",
+      "directory": "compare1/block03-MA11"
+    },
+    {
+      "trial": 1,
+      "block": 4,
+      "round": 2,
+      "index": 8,
+      "arm": "MA11",
+      "mode": "timing",
+      "directory": "compare1/block04-MA11"
+    },
+    {
+      "trial": 1,
+      "block": 4,
+      "round": 2,
+      "index": 9,
+      "arm": "Q0",
+      "mode": "timing",
+      "directory": "compare1/block04-Q0"
+    },
+    {
+      "trial": 1,
+      "block": 5,
+      "round": 2,
+      "index": 10,
+      "arm": "Q0",
+      "mode": "timing",
+      "directory": "compare1/block05-Q0"
+    },
+    {
+      "trial": 1,
+      "block": 5,
+      "round": 2,
+      "index": 11,
+      "arm": "MA11",
+      "mode": "timing",
+      "directory": "compare1/block05-MA11"
+    },
+    {
+      "trial": 1,
+      "block": 6,
+      "round": 2,
+      "index": 12,
+      "arm": "MA11",
+      "mode": "timing",
+      "directory": "compare1/block06-MA11"
+    },
+    {
+      "trial": 1,
+      "block": 6,
+      "round": 2,
+      "index": 13,
+      "arm": "Q0",
+      "mode": "timing",
+      "directory": "compare1/block06-Q0"
+    },
+    {
+      "trial": 1,
+      "block": 7,
+      "round": 2,
+      "index": 14,
+      "arm": "Q0",
+      "mode": "timing",
+      "directory": "compare1/block07-Q0"
+    },
+    {
+      "trial": 1,
+      "block": 7,
+      "round": 2,
+      "index": 15,
+      "arm": "MA11",
+      "mode": "timing",
+      "directory": "compare1/block07-MA11"
+    }
+  ]
+}

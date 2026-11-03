@@ -1,0 +1,15 @@
+{
+  "out": "/workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176",
+  "trials": 1,
+  "candidate_only": true,
+  "python": "/workspace/conda-envs/tempname-h100/bin/python",
+  "megatron": "/workspace/Megatron-LM",
+  "build_cuda_home": "/usr/local/cuda-12.8",
+  "cuda_home": "/usr/local/cuda-12.4",
+  "nccl_root": null,
+  "ma17_build": null,
+  "jobs": 192,
+  "worker_timeout": 1800,
+  "execute": true,
+  "foreground": false
+}

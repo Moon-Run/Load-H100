@@ -1,0 +1,13 @@
+{
+  "protocol": "h100-ma20-codec-first-detached-v1",
+  "status": "completed",
+  "stage": "done",
+  "candidate": "Q0",
+  "fullstep_executed": true,
+  "increment_over_MA11_validated": false,
+  "operator_selection": "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633/operator/selection.json",
+  "performance_increment_over_MA11_validated": false,
+  "accuracy_equivalence_validated": false,
+  "report": "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633/fullstep/report.json",
+  "formal_optimizer_steps": 800
+}

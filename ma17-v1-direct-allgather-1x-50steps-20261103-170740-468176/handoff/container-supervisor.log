@@ -1,0 +1,18 @@
+/workspace/conda-envs/tempname-h100/bin/python /workspace/TempName-New/tools/h100/phase6/ma17_build.py prepare --out /workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176/build
+Log: /workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176/build-prepare.log
+/workspace/conda-envs/tempname-h100/bin/python /workspace/TempName-New/tools/h100/phase6/ma17_build.py build --build /workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176/build --cuda-home /usr/local/cuda-12.8 --jobs 192
+Log: /workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176/compile.log
+/workspace/conda-envs/tempname-h100/bin/python /workspace/TempName-New/tools/h100/phase6/candidate_fullstep.py prepare /workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176/fullstep --experiment ma17 --build /workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176/build --megatron /workspace/Megatron-LM --trials 1 --blocks 4
+Log: /workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176/fullstep-prepare.log
+/workspace/conda-envs/tempname-h100/bin/python /workspace/TempName-New/tools/h100/phase6/candidate_fullstep.py run /workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176/fullstep --stage all --python /workspace/conda-envs/tempname-h100/bin/python --cuda-home /usr/local/cuda-12.4 --worker-timeout 1800 --execute
+Log: /workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176/fullstep-run.log
+Traceback (most recent call last):
+  File "/workspace/TempName-New/tools/h100/phase6/detach_ablation5_run_two.py", line 164, in detach
+    (supervisor or supervise)(args)
+  File "/workspace/TempName-New/tools/h100/phase6/detach_ma17.py", line 196, in supervise
+    launcher.invoke(command, args.out/(label + '.log'), env)
+  File "/workspace/TempName-New/tools/h100/phase6/detach_ablation5_run_two.py", line 67, in invoke
+    subprocess.run(cmd, cwd=REPO, env=env, stdout=f, stderr=subprocess.STDOUT, check=True)
+  File "/workspace/conda-envs/tempname-h100/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/workspace/conda-envs/tempname-h100/bin/python', '/workspace/TempName-New/tools/h100/phase6/candidate_fullstep.py', 'run', '/workspace/TempName-New/logs/h100/phase6/ma17-v1-direct-allgather-1x-50steps-20261103-170740-468176/fullstep', '--stage', 'all', '--python', '/workspace/conda-envs/tempname-h100/bin/python', '--cuda-home', '/usr/local/cuda-12.4', '--worker-timeout', '1800', '--execute']' returned non-zero exit status 1.

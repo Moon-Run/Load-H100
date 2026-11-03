@@ -1,0 +1,49 @@
+{
+  "run_id": "f2f9d94d2ea44c2e998fb8c3554fb49f",
+  "jobs": [
+    {
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "mode": "smoke",
+      "trial": 0,
+      "block": -1,
+      "index": -1,
+      "directory": "smoke-F4-cache-zcount-csoftmax-directag"
+    },
+    {
+      "block": 0,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 1,
+      "directory": "compare1/block00-F4-cache-zcount-csoftmax-directag",
+      "trial": 1,
+      "round": 1,
+      "mode": "timing"
+    },
+    {
+      "block": 1,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 2,
+      "directory": "compare1/block01-F4-cache-zcount-csoftmax-directag",
+      "trial": 1,
+      "round": 1,
+      "mode": "timing"
+    },
+    {
+      "block": 2,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 5,
+      "directory": "compare1/block02-F4-cache-zcount-csoftmax-directag",
+      "trial": 1,
+      "round": 2,
+      "mode": "timing"
+    },
+    {
+      "block": 3,
+      "arm": "F4-cache-zcount-csoftmax-directag",
+      "index": 6,
+      "directory": "compare1/block03-F4-cache-zcount-csoftmax-directag",
+      "trial": 1,
+      "round": 2,
+      "mode": "timing"
+    }
+  ]
+}

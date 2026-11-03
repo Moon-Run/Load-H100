@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/workspace/conda-envs/tempname-h100/bin/python",
+    "-m",
+    "torch.distributed.run",
+    "--standalone",
+    "--nproc_per_node=8",
+    "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633/operator/scripts/ma20_probe.py",
+    "worker",
+    "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633/operator",
+    "--job",
+    "{\"arm\": \"Q56\", \"block\": 1, \"directory\": \"block01-Q56\", \"index\": 11, \"split\": \"train\"}"
+  ],
+  "job": {
+    "block": 1,
+    "arm": "Q56",
+    "index": 11,
+    "split": "train",
+    "directory": "block01-Q56"
+  }
+}

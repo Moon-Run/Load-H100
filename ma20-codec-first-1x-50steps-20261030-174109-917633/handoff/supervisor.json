@@ -1,0 +1,10 @@
+{
+  "ready": true,
+  "pid": 926345,
+  "ppid": 1,
+  "sid": 926343,
+  "pgid": 926343,
+  "cgroup": "0::/\n",
+  "repo": "/workspace/TempName-New",
+  "batch": "/workspace/TempName-New/logs/h100/phase6/ma20-codec-first-1x-50steps-20261030-174109-917633"
+}
